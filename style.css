@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* background: black; */
+}
+html{
+scroll-behavior: smooth;}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* navbar styleing */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 999;
+  font-family: "ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: lightpink;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: lightpink;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: white;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: lightpink;
+}
+.navbar.sticky .menu li a:hover {
+  color: white;
+}
+
+.x{
+  letter-spacing: .15em;
+  font-family: cursive;
+  font-size: 50px;
+}
+/* menubar */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.scroll-up{
+  position:fixed ;
+  height: 45px;
+  width: 42px;
+  background: black;
+  border: white solid 2px;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.scroll-up.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Home section styling */
+.home {
+  display: flex;
+  background:url('./image/lightup.jpg');
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "ubuntu", sans-serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+.home .home-contect .text-1 {
+  
+  letter-spacing: .10em;
+  font-family: cursive;
+  font-size: 40px;
+}
+.home .home-contect .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+.home .home-contect .text-3 {
+  font-size: 60px;
+  margin: 5px 0;
+}
+.home .home-contect .text-3 span {
+  color: lightpink;
+  font-weight: 500;
+}
+
+/* all styling */
+section {
+  padding: 100px 0;
+}
+.about,
+.project,
+.contact{
+  font-family: "Poppins", sans-serif;
+}
+
+.about .about-contect,
+.project .serv-contect, .skill .skill-contect  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-family: "ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  font-size: 20px;
+  color: lightpink;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* about section */
+.about .title::after {
+  content: "who I am";
+}
+
+.about .about-contect .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about .about-contect .right {
+  width: 47%;
+}
+.about .about-contect .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-contect .right .text span {
+  color: lightpink;
+}
+.about .about-contect .right p {
+  text-align: justify;
+}
+
+.about .about-contect .right a {
+  display: inline-block;
+  background: lightpink;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid lightpink;
+  transition: all 0.3s ease;
+}
+.about .about-contect .right a:hover {
+  color: lightpink;
+  background: none;
+}
+
+/* <!-- project section  styling--> */
+.project {
+  background: black;
+  color: #fff;
+}
+
+.project .title::before {
+  background: white;
+}
+.project .title::after {
+  background: black;
+  content: "what I do";
+}
+.project .serv-contect .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project .serv-contect .card:hover {
+  background: lightpink;
+}
+.project .serv-contect .card:hover .box {
+  transform: scale(1.05);
+}
+.project .serv-contect .card .box {
+  transition: all 0.3s ease;
+}
+.project .serv-contect .card i {
+  font-size: 40px;
+  color: lightpink;
+  transition: color 0.3s ease;
+}
+.project .serv-contect .card:hover i {
+  color: white;
+}
+.project .serv-contect .card .text {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* <!-- skills section  styling--> */
+.skill {
+  background: black;
+  color: #fff;
+}
+
+.skill .title::before {
+  background: white;
+}
+.skill .title::after {
+  background: black;
+  content: "skill";
+}
+.skill .skill-contect .skill-card {
+  width: calc(10% - 10px);
+  background: #222;
+  text-align: center;
+  border-radius: 4px;
+  padding: 7px 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.skill .skill-contect .skill-card:hover {
+  background: lightpink;
+}
+.skill .skill-contect .skill-card:hover .box {
+  transform: scale(1.05);
+}
+.skill .skill-contect .skill-card .box {
+  transition: all 0.3s ease;
+}
+.skill .skill-contect .skill-card i {
+  font-size: 30px;
+  color: lightpink;
+  transition: color 0.3s ease;
+}
+.skill .skill-contect .skill-card:hover i {
+  color: white;
+}
+.skill .skill-contect .skill-card .text {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+/* contact   */
+.contact{
+color: #fff;  background: black;
+}
+
+.contact .title::after{
+  content: 'reach me at';
+  background: black;
+  
+  
+}
+.contact .title::before {
+  background: white;
+}
+
+.contact .contact-contect p{
+  cursor: pointer;
+  width: 100%;
+ 
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-contect a{
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer{
+  background: lightpink;
+  padding: 20px 23px;
+text-align: center;
+}
+footer p{
+  color:black;
+}
+
+/* media query 1104px*/
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+  .about .about-contect .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+
+/* media query 947px*/
+@media (max-width: 947px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .skill .skill-contect .skill-card{
+    width:30%;
+    font-size: 10px;
+    margin-bottom: 20px; 
+  }
+
+  .navbar .menu {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home .home-contect .text-2 {
+    font-size: 70px;
+  }
+  .home .home-contect .text-3 {
+    font-size: 35px;
+  }
+  
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-contect .column {
+    width: 100%;
+  }
+  .about .about-contect .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-contect .right {
+    flex: 100%;
+  }
+
+  .project .serv-contect .card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .text-1, .x{
+    font-size: 30px;
+  }
+  .home .home-contect .text-2 {
+    font-size: 60px;
+  }
+  .home .home-contect .text-3 {
+    font-size: 30px;
+  }
+  .project .serv-contect .card {
+    width: calc(50% -10px);
+    margin-bottom: 20px;
+  }
+  .skill .skill-contect .skill-card{
+    width:30%;
+    font-size: 10px;
+    margin-bottom: 20px; 
+  }
+  .contact .contact-contect p{
+    font-size: 15px;
+  }
+}
+
