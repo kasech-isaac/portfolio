@@ -25,7 +25,7 @@ scroll-behavior: smooth;}
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: lightpink;
+  background: black;
 }
 .navbar .max-width {
   display: flex;
@@ -193,7 +193,7 @@ h1{
   margin: 5px 0;
 }
 .home .home-contect .text-3 span {
-  color: lightpink;
+  color: #fd57bf;
   font-weight: 500;
 }
 
@@ -248,6 +248,20 @@ section .title::after {
 /* about section */
 .about .title::after {
   content: "who I am";
+}
+
+.sleep{
+  border-bottom:1px solid white;
+ /* background-color: lightpink; */
+  transition:all .3s ease-in-out;
+  color:lightpink;
+  /* border-radius: 20px; */
+  padding: 4px;
+}
+.sleep:hover{
+  border:1px solid white;
+  font-size:20px;
+  color: lightpink;
 }
 
 .about .about-contect .left img {
@@ -311,9 +325,9 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.project .serv-contect .card:hover {
+/* .project .serv-contect .card:hover {
   background: lightpink;
-}
+} */
 .project .serv-contect .card:hover .box {
   transform: scale(1.05);
 }
@@ -382,6 +396,11 @@ section .title::after {
 }
 /* contact   */
 .contact{
+  width: 100%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 color: #fff;  background: black;
 }
 
@@ -414,7 +433,22 @@ color: #fff;  background: black;
   padding: 5px;
   margin-bottom: 10px;
 }
+.email{
+  font-size: large;
+  
+}
+.heading .h1{
+  color: #fff;
+}
 
+.heading .h1::before{
+  width: 10rem;
+  height: 3px;
+  border-radius: 0.8rem;
+}
+.heading .h1::before{
+  color: #fff;
+}
 footer{
   background: lightpink;
   padding: 20px 23px;
