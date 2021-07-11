@@ -130,6 +130,25 @@ scroll-behavior: smooth;}
   padding: 1rem;
   /* user-select: none, */
 }
+h1{
+  display: block;
+  margin-inline-start: 0.67em;
+  margin-inline-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home-contect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
 
 .button_slide {
   color: black;
@@ -499,6 +518,9 @@ footer p{
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
+  }
+  .home-contect h1{
+    font-size: 60px;
   }
   .text-1, .x{
     font-size: 30px;
