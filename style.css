@@ -318,6 +318,7 @@ section .title::after {
 .project .serv-contect .card {
   width: calc(33% - 20px);
   background: #222;
+  margin: 4px;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
@@ -334,10 +335,10 @@ section .title::after {
 .project .serv-contect .card .box {
   transition: all 0.3s ease;
 }
-.project .serv-contect .card i {
-  font-size: 40px;
-  color: lightpink;
-  transition: color 0.3s ease;
+.project .serv-contect .card img {
+  width: 200;
+  height: 100px;
+
 }
 .project .serv-contect .card:hover i {
   color: white;
@@ -363,7 +364,7 @@ section .title::after {
 }
 .skill .skill-contect .skill-card {
   width: calc(10% - 10px);
-  background: #222;
+  /* background: #222; */
   text-align: center;
   border-radius: 4px;
   padding: 7px 7px;
@@ -382,7 +383,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .skill .skill-contect .skill-card i {
-  font-size: 30px;
+  font-size: 20px;
   color: lightpink;
   transition: color 0.3s ease;
 }
@@ -390,7 +391,7 @@ section .title::after {
   color: white;
 }
 .skill .skill-contect .skill-card .text {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
@@ -468,6 +469,7 @@ footer p{
   .about .about-contect .left img {
     height: 350px;
     width: 350px;
+   
   }
 }
 
