@@ -253,6 +253,7 @@ section .title::after {
   color: lightpink;
 }
 .home .home-contect .left img {
+  
   height: 500px;
   width: 500px;
   object-fit: cover;
@@ -497,8 +498,6 @@ footer p{
     padding: 0 50px;
   }
 }
-
-
 /* media query 947px*/
 @media (max-width: 947px) {
   .max-width {
