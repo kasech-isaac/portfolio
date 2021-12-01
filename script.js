@@ -27,5 +27,5 @@ $(document).ready(function(){
 //     string:['Full Stack Web Developer'],
 //     typeSpped:60,
 //     backSpeed:60,
-//     // loop:true
+//     loop:true
 // })
