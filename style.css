@@ -201,10 +201,6 @@ section {
 .about{
   color:white;
   background: black;
-  width: 100%;
-  height: 100vh;
-  
-
 }
 .about .about-contect,
 .project .serv-contect, .skill .skill-contect  {
